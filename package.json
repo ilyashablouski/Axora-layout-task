@@ -1,5 +1,5 @@
 {
-  "name": "Axora (layout task)",
+  "name": "Axora-layout-task",
   "version": "1.0.0",
   "description": "Responsive cross browser Layout",
   "main": "gulpfile.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/ilyashablovsky/Axora-layout-task.git"
   },
-  "author": "",
+  "author": "Ilya Shablovskiy",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ilyashablovsky/Axora-layout-task/issues"

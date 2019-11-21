@@ -24,26 +24,26 @@ const config = {
   },
 };
 
-gulp.task('build', function (done) {
+gulp.task('build', function(done) {
   gulp.src(config.root + config.css.src)
-    .pipe(less())
-    .pipe(gcmq())
-    .pipe(autoprefixer({
-      browsers: ['> 0.1%'],
-      cascade: false,
-    }))
-    .pipe(cleanCSS({
-      level: 2,
-    }))
-    .pipe(gulp.dest(config.root + config.css.dest))
-    .pipe(browserSync.reload({
-      stream: true,
-    }));
+      .pipe(less())
+      .pipe(gcmq())
+      .pipe(autoprefixer({
+        browsers: ['> 0.1%'],
+        cascade: false,
+      }))
+      .pipe(cleanCSS({
+        level: 2,
+      }))
+      .pipe(gulp.dest(config.root + config.css.dest))
+      .pipe(browserSync.reload({
+        stream: true,
+      }));
 
   done();
 });
 
-gulp.task('browserSync', function (done) {
+gulp.task('browserSync', function(done) {
   browserSync.init({
     server: {
       baseDir: config.root,
@@ -53,25 +53,25 @@ gulp.task('browserSync', function (done) {
   done();
 });
 
-gulp.task('watch', gulp.series('browserSync', function () {
+gulp.task('watch', gulp.series('browserSync', function() {
   gulp.watch(config.root + config.css.watch, gulp.parallel('build'));
-  gulp.watch(config.root + config.html.src, gulp.parallel(function (done) {
+  gulp.watch(config.root + config.html.src, gulp.parallel(function(done) {
     browserSync.reload();
 
     done();
   }));
 
-  gulp.watch(config.root + config.js.src, gulp.parallel(function (done) {
+  gulp.watch(config.root + config.js.src, gulp.parallel(function(done) {
     browserSync.reload();
 
     done();
   }));
 }));
 
-gulp.task('grid', function (done) {
+gulp.task('grid', function(done) {
   smartgrid('src/less', {
     container: {
-      maxWidth: '1170px',
+      maxWidth: '965px',
     },
   });
 
