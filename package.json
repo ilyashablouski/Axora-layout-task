@@ -1,0 +1,30 @@
+{
+  "name": "Axora (layout task)",
+  "version": "1.0.0",
+  "description": "Responsive cross browser Layout",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyashablovsky/Axora-layout-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyashablovsky/Axora-layout-task/issues"
+  },
+  "homepage": "https://github.com/ilyashablovsky/Axora-layout-task#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "eslint": "^6.6.0",
+    "eslint-config-google": "^0.14.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-less": "^4.0.1",
+    "smart-grid": "^2.1.2"
+  }
+}

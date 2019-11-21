@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url('../fonts/Work Sans/WorkSans-Regular.eot');
+  src: url('../fonts/Work Sans/WorkSans-Regular.woff2') format('woff2'),
+      url('../fonts/Work Sans/WorkSans-Regular.woff') format('woff'),
+      url('../fonts/Work Sans/WorkSans-Regular.ttf') format('truetype'),
+      url('../fonts/Work Sans/WorkSans-Regular.svg#WorkSans-Regular') format('svg'),
+      url('../fonts/Work Sans/WorkSans-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans - Semi Bold";
+  src: url('../fonts/Work Sans - Semi Bold/WorkSans-SemiBold.eot');
+  src: url('../fonts/Work Sans - Semi Bold/WorkSans-SemiBold.woff2') format('woff2'),
+      url('../fonts/Work Sans - Semi Bold/WorkSans-SemiBold.woff') format('woff'),
+      url('../fonts/Work Sans - Semi Bold/WorkSans-SemiBold.ttf') format('truetype'),
+      url('../fonts/Work Sans - Semi Bold/WorkSans-SemiBold.svg#WorkSans-SemiBold') format('svg'),
+      url('../fonts/Work Sans - Semi Bold/WorkSans-SemiBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
