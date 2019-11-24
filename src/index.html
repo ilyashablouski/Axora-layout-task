@@ -11,6 +11,7 @@
   <title>Axora</title>
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/fonts.css">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
   <!--[if lt IE 9]>
@@ -31,11 +32,133 @@
 </head>
 
 <body class="wrapper">
+  <section class="header">
+    <div class="header__content">
+      <div class="activity-container header__activity-container">
+        <img class="logo" src="/images/axora-logo.png"></img>
+        <p class="activity-container__text">Продаем и монтируем оборудование<br>
+          для отопления и водоснабжение. Бесплатно спроектируем систему отопления<br>
+          или водоснабжения для вашего дома</p>
+      </div>
 
-  <div class="test-block">
-    <p class="text">Super font text verification</p>
+      <div class="header__inner">
+        <div class="contact header__contact">
+          <span class="week contact__week">ПН...ПТ с 9 до 18</span>
+          <p class="contact__social">
+            E-mail: info@teplo.com <br>
+            Вайбер: +375 29 365-36-36</p>
+
+          <p class="phones">
+            + 375 29 362-65-65 <br>
+            + 375 33 362-65-65 </p>
+        </div>
+
+        <form action="#" class="search-form header__search-form" method="GET">
+          <input class="search-form__input" type="search" name="s" id="search-form"
+            placeholder="Поиск в каталоге, например «котел Аriston»" required>
+          <button type="submit" class="search-form__submit"></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="services-items wrapper__services-items">
+    <div class="services-item services-item_grad_1"><span class="services-item__text">Отопление</span></div>
+    <div class="services-item services-item_grad_2"><span class="services-item__text">Водоснабжение</span></div>
+    <div class="services-item services-item_grad_3"><span class="services-item__text">Монтаж</span></div>
   </div>
 
+
+  <section class="product-box">
+    <div class="product-box__content">
+      <div class="product-image"><img src="/images/boiler.png" alt="boiler" class="product-image__image"></div>
+
+      <div class="order-container">
+        <div class="transition-links">
+          <a href="#" class="transition-link">Главная </a>&#47;
+          <a href="#" class="transition-link">Отопление </a>&#47;
+          <a href="#" class="transition-link">Котлы</a>
+        </div>
+
+        <div class="product-container">
+          <p class="product-title">Termet maxiTERM turbo GCO-DP-29-36 электрический, двухконтурный, 35 кВт</p>
+          <p class="product-price">
+            <span class="product-price__value">17 000 000 руб.</span>
+            <span class="product-price__nearly">&asymp;450</span>
+            <span class="product-price__install">18 500 000 руб. с монтажом</span>
+          </p>
+
+          <div class="check-block">
+            <a href="" class="check-button"></a>
+            <div class="checkbox">
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__button" id="checkbox" hidden><span></span>Добавить в сравнение
+              </label>
+            </div>
+          </div>
+        
+          <table class="product-description">
+            <tr>
+              <td>Производитель</td>
+              <td>Junkers-Bosch (Германия)</td>
+            </tr>
+            <tr>
+              <td>Тип установки</td>
+              <td>Настенный</td>
+            </tr>
+            <tr>
+              <td>Количество контуров</td>
+              <td>Двухконтурный</td>
+            </tr>
+            <tr>
+              <td>Тип камеры сгорания</td>
+              <td>Закрытый</td>
+            </tr>
+            <tr>
+              <td>Отапливаемая площадь, м2</td>
+              <td>от 100 до 210</td>
+            </tr>
+            <tr>
+              <td>Мощность котла, кВт</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Высота, см</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>Ширина, см</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Глубина, см</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Ширина, см</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Производитель</td>
+              <td>Junkers-Bosch (Германия)</td>
+            </tr>
+            <tr>
+              <td>Тип установки</td>
+              <td>Настенный</td>
+            </tr>
+            <tr>
+              <td>Количество контуров</td>
+              <td>Двухконтурный</td>
+            </tr>
+            <tr>
+              <td>Тип камеры сгорания</td>
+              <td>Закрытый</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
   <!--Import jQuery-->
   <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
   <!-- jQuery for older IE -->
