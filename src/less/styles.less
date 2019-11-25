@@ -22,6 +22,11 @@
   -webkit-user-select: none;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -326,6 +331,7 @@ body {
     .wrapper();
 
     .sm-block( {
+        padding-top: 30px;
         flex-direction: column;
         align-items: center;
       }
@@ -518,6 +524,7 @@ td:first-child:after {
 
 .wrapper__goods-block {
   margin-top: 70px;
+  .sm(margin-top, 30px);
 }
 
 .goods-block {
@@ -707,7 +714,6 @@ td:first-child:after {
     }
 
   );
-
 
   &__title {
     font-size: 11px;
