@@ -395,7 +395,7 @@ body {
       }
 
     );
-  
+
     .xs(margin-top, 40px);
   }
 
@@ -514,4 +514,141 @@ td:first-child:after {
   display: inline-block;
   width: 69.95%;
   border-bottom: 1px dotted #000000;
+}
+
+.wrapper__goods-block {
+  margin-top: 70px;
+}
+
+.goods-block {
+  background: #efefef;
+
+  &__content {
+    padding-top: 27px;
+    padding-bottom: 59px;
+    padding-right: 30px;
+    padding-left: 30px;
+    .row-flex();
+    max-width: 965px;
+    margin: 0 auto;
+
+  }
+
+  &__title {
+    max-width: 194px;
+
+    .md-block( {
+        max-width: 100%;
+        text-align: center;
+      }
+
+    );
+  }
+
+  &__header {
+    margin-left: 7px;
+    font-family: "FuturaNewHeavy-Reg";
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__text {
+    margin-top: 26px;
+    margin-left: 7px;
+    line-height: 24px;
+  }
+
+  &__goods-cards {
+    padding-top: 10px;
+  }
+}
+
+.goods-cards {
+  position: relative;
+  .row-flex();
+  margin-left: auto;
+  max-width: 727px;
+
+  .md-block( {
+      flex-wrap: nowrap;
+      padding: 0;
+      margin: 15px auto 0px;
+    }
+
+  );
+}
+
+.goods-card {
+  max-width: 229px;
+  padding: 0 20px;
+  height: 378px;
+  background: #ffffff;
+
+  &__inner {
+    margin: 27px auto 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 187px;
+    min-height: 273px;
+  }
+
+
+  &__meta {
+    margin-top: auto;
+    margin-left: 5px;
+  }
+
+  &__header {
+    display: inline-block;
+    border-bottom: 1px solid;
+    color: #0080d9;
+  }
+
+  &__text {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+
+  &__price {
+    font-family: "FuturaNewHeavy-Reg";
+  }
+
+  &_m {
+    margin: 0 20px;
+  }
+
+  &_off {
+    .xs-block( {
+        display: none;
+      }
+
+    );
+  }
+
+  &_xs {
+    .xs-block( {
+        margin-right: 15px;
+      }
+
+    );
+  }
+
+  &_x {
+    @media screen and (max-width: 355px) {
+      display: none;
+    }
+  }
+}
+
+.toogle-button {
+  position: absolute;
+  right: 0;
+  margin-top: 180px;
+  margin-right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 12px solid #0f0f0f;
+  border-bottom: 10px solid transparent;
 }
