@@ -44,13 +44,15 @@
       <div class="header__inner">
         <div class="contact header__contact">
           <span class="week contact__week">ПН...ПТ с 9 до 18</span>
-          <p class="contact__social">
-            E-mail: info@teplo.com <br>
-            Вайбер: <a href="#">+375 29 365-36-36</a></p>
+          <div class="contact__social">
+            <span>E-mail: info@teplo.com</span> <br>
+            <span>Вайбер: <a href="#">+375 29 365-36-36</a></span>
+          </div>
 
-          <span class="phones">
-            <a href="#">+ 375 29 362-65-65</a><br>
-            <a href="#">+ 375 33 362-65-65</a></span>
+          <div class="phones">
+            <span><a href="#">+ 375 29 362-65-65</a></span><br>
+            <span><a href="#">+ 375 33 362-65-65</a></span>
+          </div>
         </div>
 
         <form action="#" class="search-form header__search-form" method="GET">
@@ -64,8 +66,10 @@
 
   <div class="services-items wrapper__services-items">
     <div class="services-item services-item_grad_1"><span class="services-item__text">Отопление</span></div>
-    <div class="services-item services-item_grad_2"><span class="services-item__text">Водоснабжение</span></div>
-    <div class="services-item services-item_grad_3"><span class="services-item__text">Монтаж</span></div>
+    <div class="services-item services-item_grad_2"><span
+        class="services-item__text services-item__text_line">Водоснабжение</span></div>
+    <div class="services-item services-item_grad_3"><span
+        class="services-item__text services-item__text_line">Монтаж</span></div>
   </div>
 
 
@@ -81,13 +85,13 @@
         </div>
 
         <div class="product-container">
-          <p class="product-title product-container__product-title">Termet maxiTERM turbo GCO-DP-29-36 электрический,
-            двухконтурный, 35 кВт</p>
-          <p class="product-price">
+          <h1 class="product-title product-container__product-title">Termet maxiTERM turbo GCO-DP-29-36 электрический,
+            двухконтурный, 35 кВт</h1>
+          <div class="product-price">
             <span class="product-price__value">17 000 000 руб.</span>
             <span class="product-price__nearly">&asymp;450</span>
             <span class="product-price__install">18 500 000 руб. с монтажом</span>
-          </p>
+          </div>
 
           <div class="check-block product-container__check-block">
             <a href="#" class="check-button">Оставить заявку</a>
@@ -98,66 +102,64 @@
             </div>
           </div>
 
-          <div class="product-container__table">
-            <table class="product-description product-container__product-description">
-              <tr>
-                <td>Производитель</td>
-                <td>Junkers-Bosch (Германия)</td>
-              </tr>
-              <tr>
-                <td>Тип установки</td>
-                <td>Настенный</td>
-              </tr>
-              <tr>
-                <td>Количество контуров</td>
-                <td>Двухконтурный</td>
-              </tr>
-              <tr>
-                <td>Тип камеры сгорания</td>
-                <td>Закрытый</td>
-              </tr>
-              <tr>
-                <td>Отапливаемая площадь, м2</td>
-                <td>от 100 до 210</td>
-              </tr>
-              <tr>
-                <td>Мощность котла, кВт</td>
-                <td>18</td>
-              </tr>
-              <tr>
-                <td>Высота, см</td>
-                <td>70</td>
-              </tr>
-              <tr>
-                <td>Ширина, см</td>
-                <td>40</td>
-              </tr>
-              <tr>
-                <td>Глубина, см</td>
-                <td>30</td>
-              </tr>
-              <tr>
-                <td>Ширина, см</td>
-                <td>30</td>
-              </tr>
-              <tr>
-                <td>Производитель</td>
-                <td>Junkers-Bosch (Германия)</td>
-              </tr>
-              <tr>
-                <td>Тип установки</td>
-                <td>Настенный</td>
-              </tr>
-              <tr>
-                <td>Количество контуров</td>
-                <td>Двухконтурный</td>
-              </tr>
-              <tr>
-                <td>Тип камеры сгорания</td>
-                <td>Закрытый</td>
-              </tr>
-            </table>
-          </div>
+          <table class="product-description product-container__product-description">
+            <tr>
+              <td class="product-description__col product-description__col_1">Производитель</td>
+              <td class="product-description__col product-description__col_2">Junkers-Bosch (Германия)</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Тип установки</td>
+              <td class="product-description__col product-description__col_2">Настенный</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Количество контуров</td>
+              <td class="product-description__col product-description__col_2">Двухконтурный</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Тип камеры сгорания</td>
+              <td class="product-description__col product-description__col_2">Закрытый</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Отапливаемая площадь, м2</td>
+              <td class="product-description__col product-description__col_2">от 100 до 210</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Мощность котла, кВт</td>
+              <td class="product-description__col product-description__col_2">18</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Высота, см</td>
+              <td class="product-description__col product-description__col_2">70</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Ширина, см</td>
+              <td class="product-description__col product-description__col_2">40</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Глубина, см</td>
+              <td class="product-description__col product-description__col_2">30</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Ширина, см</td>
+              <td class="product-description__col product-description__col_2">30</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Производитель</td>
+              <td class="product-description__col product-description__col_2">Junkers-Bosch (Германия)</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Тип установки</td>
+              <td class="product-description__col product-description__col_2">Настенный</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Количество контуров</td>
+              <td class="product-description__col product-description__col_2">Двухконтурный</td>
+            </tr>
+            <tr>
+              <td class="product-description__col product-description__col_1">Тип камеры сгорания</td>
+              <td class="product-description__col product-description__col_2">Закрытый</td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
