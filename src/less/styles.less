@@ -3,16 +3,16 @@
 
 .reset();
 
-.ie10( {
+// .ie10( {
 
-    *,
-    *::after,
-    *::before {
-      box-sizing: border-box;
-    }
-  }
+//     *,
+//     *::after,
+//     *::before {
+//       box-sizing: border-box;
+//     }
+//   }
 
-);
+// );
 
 * {
   -webkit-touch-callout: none;
@@ -263,12 +263,6 @@ body {
   justify-content: center;
   max-width: 1072px;
 
-  .md-block( {
-      padding: 0 15px;
-    }
-
-  );
-
   .sm-block( {
       flex-wrap: wrap;
     }
@@ -396,6 +390,12 @@ body {
 
 .order-container {
   max-width: 493px;
+
+  .ie10( {
+      max-width: 90%;
+    }
+
+  );
 }
 
 .transition-links {
@@ -483,6 +483,11 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 446px;
+
+  &__check-button {
+    margin-right: 15px;
+    .sm(margin-right, 0);
+  }
 }
 
 .check-button {
@@ -584,8 +589,8 @@ body {
   &__content {
     padding-top: 27px;
     padding-bottom: 59px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 53px;
+    padding-left: 53px;
     .row-flex();
     justify-content: space-between;
     max-width: 965px;
@@ -595,14 +600,14 @@ body {
 
   &__title {
     max-width: 194px;
+    margin-right: 15px;
 
-    .md-block( {
-        max-width: 100%;
-        text-align: center;
-      }
-
-    );
+    @media screen and (max-width: 1013px) {
+      max-width: 100%;
+      text-align: center;
+    }
   }
+
 
   &__header {
     margin-left: 7px;
@@ -618,7 +623,11 @@ body {
   }
 
   &__goods-slider {
-    .md(margin, 0 auto);
+
+    @media screen and (max-width: 1013px) {
+      margin: 0 auto;
+    }
+
   }
 }
 
@@ -636,13 +645,12 @@ body {
   }
 
   &__goods-cards {
-    .md-block( {
-        flex-wrap: nowrap;
-        padding: 0;
-        margin: 15px auto 0px;
-      }
 
-    );
+    @media screen and (max-width: 1013px) {
+      flex-wrap: nowrap;
+      padding: 0;
+      margin: 15px auto 0px;
+    }
   }
 }
 
@@ -663,6 +671,17 @@ body {
   background: #ffffff;
 
   .sm(width, 229px);
+
+
+  .ie10( {
+      width: 187px;
+    }
+
+  );
+
+  @media screen and (max-width:720px) and (min-width:0\0) {
+    width: auto;
+  }
 
   &__inner {
     margin: 27px auto 0;
@@ -729,7 +748,7 @@ body {
     right: 25px;
     content: '';
     display: block;
-    width: 35px;
+    width: 25px;
     height: 35px;
   }
 }
