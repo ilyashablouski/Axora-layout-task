@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond:700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
   <!--[if lt IE 9]>
 <script>
@@ -35,17 +36,20 @@
   <section class="header">
     <div class="header__content">
       <div class="activity-container header__activity-container">
-        <img class="logo" src="images/axora-logo.png" alt="Axora">
-        <p class="activity-container__text">Продаем и монтируем оборудование<br>
-          для отопления и водоснабжение. Бесплатно спроектируем систему отопления<br>
-          или водоснабжения для вашего дома</p>
+        <a class="logo" href="https://ilyashablovsky.github.io/Axora-layout-task/src/"><img src="images/axora-logo.png"
+            alt="Axora"></a>
+        <div class="activity-container__text">
+          <span>Продаем и монтируем оборудование<br>
+            для отопления и водоснабжение. Бесплатно спроектируем систему отопления<br>
+            или водоснабжения для вашего дома</span>
+        </div>
       </div>
 
       <div class="header__inner">
         <div class="contact header__contact">
-          <span class="week contact__week">ПН...ПТ с 9 до 18</span>
+          <div class="week contact__week"><span>ПН...ПТ с 9 до 18</span></div>
           <div class="contact__social">
-            <span>E-mail: info@teplo.com</span> <br>
+            <span>E-mail: info@teplo.com</span><br>
             <span>Вайбер: <a href="#">+375 29 365-36-36</a></span>
           </div>
 
@@ -116,7 +120,7 @@
               <td class="product-description__col product-description__col_2">Двухконтурный</td>
             </tr>
             <tr>
-              <td class="product-description__col product-description__col_1">Тип камеры сгорания</td>
+              <td class="product-description__col product-description__col_1 product-description__col_quest">Тип камеры сгорания</td>
               <td class="product-description__col product-description__col_2">Закрытый</td>
             </tr>
             <tr>
@@ -168,64 +172,74 @@
   <section class="goods-block wrapper__goods-block">
     <div class="goods-block__content">
       <div class="goods-block__title">
-        <p class="goods-block__header">Вместе с этим
-          котлом покупают</p>
+        <h2 class="goods-block__header">Вместе с этим
+          котлом покупают</h2>
         <p class="span goods-block__text">Вместе с отопительными котлами обычно заказывают трубы и фитинги, бойлер
           для хранения горячей воды
           и элементы для защиты электропитания</p>
       </div>
 
-      <div class="goods-cards goods-block__goods-cards">
-        <div class="goods-card goods-card_xs">
-          <div class="goods-card__inner">
-            <div class="goods-card__image"><img src="images/products/product-1.png" alt="boiler-1"></div>
-            <div class="goods-card__meta">
-              <a href="#" class="goods-card__header">Ariston EGIS PLUS 24 FF</a>
-              <div class="goods-card__text">Газовый, двухконтурный, 35 кВт</div>
-              <div class="goods-card__price">16 030 000 руб.</div>
+      <div class="goods-slider goods-block__goods-slider">
+        <div class="goods-slider__inner">
+          <div class="goods-cards fast goods-slider__goods-cards faster">
+            <div class="goods-card goods-cards__goods-card faster">
+              <div class="goods-card__inner">
+                <div class="goods-card__image"><img src="images/products/product-1.png" alt="boiler-1"></div>
+                <div class="goods-card__meta">
+                  <a href="#" class="goods-card__header">Ariston EGIS PLUS 24 FF</a>
+                  <span class="goods-card__text">Газовый, двухконтурный, 35 кВт</span>
+                  <span class="goods-card__price">16 030 000 руб.</span>
+                </div>
+              </div>
+            </div>
+            <div class="goods-card goods-cards__goods-card faster">
+              <div class="goods-card__inner">
+                <div class="goods-card__image"><img src="images/products/product-2.png" alt="boiler-2"></div>
+                <div class="goods-card__meta">
+                  <a href="#" class="goods-card__header">Ariston EGIS PLUS 24 FF</a>
+                  <span class="goods-card__text">Газовый, двухконтурный, 35 кВт</span>
+                  <span class="goods-card__price">16 030 000 руб.</span>
+                </div>
+              </div>
+            </div>
+            <div class="goods-card goods-cards__goods-card faster">
+              <div class="goods-card__inner">
+                <div class="goods-card__image"><img src="images/products/product-3.png" alt="boiler-3"></div>
+                <div class="goods-card__meta">
+                  <a href="#" class="goods-card__header">Ariston EGIS PLUS 24 FF</a>
+                  <span class="goods-card__text">Газовый, двухконтурный, 35 кВт</span>
+                  <span class="goods-card__price">16 030 000 руб.</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="goods-card goods-card_m goods-card_off">
-          <div class="goods-card__inner">
-            <div class="goods-card__image"><img src="images/products/product-2.png" alt="boiler-2"></div>
-            <div class="goods-card__meta">
-              <a href="#" class="goods-card__header">Ariston EGIS PLUS 24 FF</a>
-              <div class="goods-card__text">Газовый, двухконтурный, 35 кВт</div>
-              <div class="goods-card__price">16 030 000 руб.</div>
-            </div>
-          </div>
-        </div>
-        <div class="goods-card goods-card_x">
-          <div class="goods-card__inner">
-            <div class="goods-card__image"><img src="images/products/product-3.png" alt="boiler-3"></div>
-            <div class="goods-card__meta">
-              <a href="#" class="goods-card__header">Ariston EGIS PLUS 24 FF</a>
-              <div class="goods-card__text">Газовый, двухконтурный, 35 кВт</div>
-              <div class="goods-card__price">16 030 000 руб.</div>
-            </div>
-          </div>
-        </div>
-        <div class="toogle-button"></div>
+        <div class="toogle-button goods-slider__toogle-button"></div>
       </div>
     </div>
   </section>
 
   <footer class="footer wrapper__footer">
     <div class="footer__content">
-      <p class="footer__copyright">© 2016 Общество с ограниченной ответственностью «СтройИнвест»
-        e-mail: info@axora.by</p>
-      <p class="footer__contact">220049, г. Минск, ул. Суворова, д. 18, пом. 1
-        Работаем ПН...ПТ с 9 до 18<br>
-        + 375 (29) 362-65-65<br>
-        + 375 (33) 362-65-65
-      </p>
-      <div class="footer-logo footer__footer-logo">
+      <section class="footer__copyright">
+        <span>© 2016 Общество с ограниченной ответственностью «СтройИнвест»
+          e-mail: info@axora.by
+        </span>
+      </section>
+      <section class="footer__contact">
+        <span>220049, г. Минск, ул. Суворова, д. 18, пом. 1
+          Работаем ПН...ПТ с 9 до 18<br>
+          + 375 (29) 362-65-65<br>
+          + 375 (33) 362-65-65
+        </span>
+      </section>
+      <section class="footer-logo footer__footer-logo">
         <div class="footer-logo__inner">
-          <img class="logo" src="images/axora-logo.png" alt="Axora">
+          <a class="logo" href="https://ilyashablovsky.github.io/Axora-layout-task/src/"><img
+              src="images/axora-logo.png" alt="Axora"></a>
         </div>
         <span class="footer-logo__title">Разработка сайта</span>
-      </div>
+      </section>
     </div>
   </footer>
   <!--Import jQuery-->
@@ -233,7 +247,7 @@
   <!-- jQuery for older IE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Site Sripts -->
-  <script src="js/common.js"></script>
+  <script src="js/dev/common.js"></script>
 </body>
 
 </html>
