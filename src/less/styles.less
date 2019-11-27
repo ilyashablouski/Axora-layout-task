@@ -14,7 +14,6 @@
 
 );
 
-
 * {
   -webkit-touch-callout: none;
   -webkit-text-size-adjust: none;
@@ -30,7 +29,7 @@ body {
 a {
   text-decoration: none;
   color: #000000;
-  
+
 }
 
 button {
@@ -175,7 +174,6 @@ body {
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
-  width: 486px;
 
   .sm(margin-right, 0);
 
@@ -289,6 +287,13 @@ body {
   line-height: 109px;
   text-align: center;
 
+  .ie10( {
+      width: 100%;
+
+    }
+
+  );
+
   &__text {
     color: #ffffff;
     font-family: "Garamond";
@@ -314,12 +319,19 @@ body {
   }
 
   &_2 {
+
     background: linear-gradient(to right, #ff933e 0%, #ff9f3d 50%, #ffab3c 100%);
     margin-left: 2px;
     margin-right: 2px;
 
     .sm-block( {
         margin: 10px 0;
+      }
+
+    );
+
+    .ie10( {
+        flex-grow: 1;
       }
 
     );
@@ -515,6 +527,13 @@ body {
 
   &_1 {
     width: 57%;
+
+    .ie10( {
+
+        width: 55%;
+      }
+
+    );
   }
 
   &_1:after {
