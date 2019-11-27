@@ -1,9 +1,9 @@
 /* eslint-disable require-jsdoc */
 $(document).ready(() => {
   $('.toogle-button').click(() => {
-    animateCSS('.goods-card:nth-child(1)', 'fadeIn');
-    animateCSS('.goods-card:nth-child(2)', 'fadeIn');
-    animateCSS('.goods-card:nth-child(3)', 'fadeIn');
+    animateCSS('.goods-card:nth-child(1)', 'flipInY');
+    animateCSS('.goods-card:nth-child(2)', 'flipInY');
+    animateCSS('.goods-card:nth-child(3)', 'flipInY');
     $('.goods-cards').prepend($('.goods-card:last').detach());
   });
 
