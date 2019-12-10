@@ -54,6 +54,20 @@ input[type="search"] {
   /* IE 10+ */
 }
 
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
 input[type="checkbox"]+span {
   margin-right: 15px;
   display: inline-block;
@@ -254,6 +268,7 @@ body {
     max-width: 1072px;
 
     .md(margin-top, 30px);
+
     .sm-block( {
         flex-wrap: wrap;
       }
